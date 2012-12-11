@@ -1,18 +1,13 @@
 %define	tarname	PasteDeploy
-%define name	python-pastedeploy
-%define version 1.3.4
-%define release %mkrel 1
 
 Summary:	Load, configure, and compose WSGI applications and servers
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		python-pastedeploy
+Version:	1.5.0
+Release:	1
 Source0:	http://pypi.python.org/packages/source/P/%{tarname}/%{tarname}-%{version}.tar.gz
-Patch0:		exclude-tests.patch
 License:	MIT
 Group:		Development/Python
 Url:		http://pythonpaste.org/deploy/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Requires:	python-paste
 BuildRequires:	python-setuptools
@@ -24,16 +19,19 @@ files.
 
 %prep
 %setup -q -n %{tarname}-%{version}
-%patch0 -p0
 
 %install
-%__rm -rf %{buildroot}
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
-
-%clean
-%__rm -rf %{buildroot}
+sed -i 's/.*egg-info$//' FILE_LIST
 
 %files -f FILE_LIST
-%defattr(-,root,root)
 %doc docs/*
+
+
+
+%changelog
+* Tue Nov 09 2010 Lev Givon <lev@mandriva.org> 1.3.4-1mdv2011.0
++ Revision: 595342
+- import python-pastedeploy
+
 
