@@ -1,2 +1,4 @@
+removed_sources:
+  PasteDeploy-1.5.0.tar.gz: 4bae6b28b5243af0e4c0f40b7f20037d1a0ae846
 sources:
-  "PasteDeploy-1.5.0.tar.gz": 4bae6b28b5243af0e4c0f40b7f20037d1a0ae846
+  PasteDeploy-1.5.2.tar.gz: 8f7676287c880df164d5659a7da28cf6ee9b039e

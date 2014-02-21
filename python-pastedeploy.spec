@@ -2,9 +2,9 @@
 
 Summary:	Load, configure, and compose WSGI applications and servers
 Name:		python-pastedeploy
-Version:	1.5.0
+Version:	1.5.2
 Release:	1
-Source0:	http://pypi.python.org/packages/source/P/%{tarname}/%{tarname}-%{version}.tar.gz
+Source0:	http://pypi.python.org/packages/source/P/PasteDeploy/PasteDeploy-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://pythonpaste.org/deploy/
@@ -33,5 +33,6 @@ sed -i 's/.*egg-info$//' FILE_LIST
 * Tue Nov 09 2010 Lev Givon <lev@mandriva.org> 1.3.4-1mdv2011.0
 + Revision: 595342
 - import python-pastedeploy
+
 
 
