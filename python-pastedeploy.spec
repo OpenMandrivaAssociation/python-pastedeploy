@@ -3,7 +3,7 @@
 Summary:	Load, configure, and compose WSGI applications and servers
 Name:		python-pastedeploy
 Version:	1.5.2
-Release:	1
+Release:	2
 Source0:	http://pypi.python.org/packages/source/P/PasteDeploy/PasteDeploy-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
