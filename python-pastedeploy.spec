@@ -7,7 +7,7 @@ Release:	2
 Source0:	http://pypi.python.org/packages/source/P/PasteDeploy/PasteDeploy-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
-Url:		http://pythonpaste.org/deploy/
+Url:		https://pythonpaste.org/deploy/
 BuildArch:	noarch
 Requires:	python-paste
 BuildRequires:	python-setuptools
